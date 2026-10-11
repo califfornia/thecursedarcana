@@ -1,7 +1,7 @@
 const CARD_POSITIONS = ['past', 'present', 'future'];
 const CARD_FACE_PATTERN = /^major_(\d{2})$/;
 const RIVE_FILE_URL = '/web/assets/myproject.riv';
-const CARD_IMAGE_URL = (number) => `/myproject/${number}.png`;
+const CARD_IMAGE_URL = (number) => `/web/assets/cards/${number}.png`;
 const STATE_MACHINE = 'ReadingExperience';
 
 export function mapReadingToRive(reading) {

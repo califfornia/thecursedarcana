@@ -12,9 +12,9 @@ const reading = {
 
 test('maps cards to Rive slots by position, independent of engine array order', () => {
   assert.deepEqual(mapReadingToRive(reading), [
-    { position: 'past', imageUrl: '/myproject/0.png', isCursed: false },
-    { position: 'present', imageUrl: '/myproject/13.png', isCursed: true },
-    { position: 'future', imageUrl: '/myproject/21.png', isCursed: true },
+    { position: 'past', imageUrl: '/web/assets/cards/0.png', isCursed: false },
+    { position: 'present', imageUrl: '/web/assets/cards/13.png', isCursed: true },
+    { position: 'future', imageUrl: '/web/assets/cards/21.png', isCursed: true },
   ]);
 });
 
@@ -108,9 +108,9 @@ test('binds faces and curse flags, starts the state machine, and handles complet
 
   await controller.playReading(reading);
   assert.deepEqual(fetchedImages, [
-    '/myproject/0.png',
-    '/myproject/13.png',
-    '/myproject/21.png',
+    '/web/assets/cards/0.png',
+    '/web/assets/cards/13.png',
+    '/web/assets/cards/21.png',
   ]);
   assert.equal(boundImages.pastFace, decodedImages[0]);
   assert.equal(boundImages.presentFace, decodedImages[1]);
