@@ -1,0 +1,122 @@
+[
+  {
+    "id": "rel_001",
+    "theme_a": "new_beginning",
+    "theme_b": "uncertainty",
+    "type": "tension",
+    "meaning": "A new beginning may feel meaningful while still lacking clarity.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_002",
+    "theme_a": "agency",
+    "theme_b": "illusion",
+    "type": "distortion",
+    "meaning": "The ability to act may be distorted when perception is shaped by assumptions or projection.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_003",
+    "theme_a": "intuition",
+    "theme_b": "illusion",
+    "type": "confusion",
+    "meaning": "It may be difficult to distinguish intuition from projection, fear, or wishful thinking.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_004",
+    "theme_a": "freedom",
+    "theme_b": "uncertainty",
+    "type": "tension",
+    "meaning": "Freedom can open new possibilities while leaving the direction uncertain.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_005",
+    "theme_a": "new_beginning",
+    "theme_b": "freedom",
+    "type": "harmony",
+    "meaning": "A new beginning creates room for exploration, freedom, and a different way forward.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_006",
+    "theme_a": "creation",
+    "theme_b": "agency",
+    "type": "harmony",
+    "meaning": "The ability to create is strengthened when intention and agency move in the same direction.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_007",
+    "theme_a": "manifestation",
+    "theme_b": "agency",
+    "type": "harmony",
+    "meaning": "Intent becomes more tangible when it is supported by deliberate action.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_008",
+    "theme_a": "creation",
+    "theme_b": "new_beginning",
+    "type": "progression",
+    "meaning": "What was created in the past can become the foundation for a new beginning.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_009",
+    "theme_a": "risk",
+    "theme_b": "uncertainty",
+    "type": "tension",
+    "meaning": "Taking a risk becomes more difficult when the outcome cannot yet be seen clearly.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_010",
+    "theme_a": "risk",
+    "theme_b": "freedom",
+    "type": "harmony",
+    "meaning": "Accepting uncertainty can create the freedom to move beyond familiar limits.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_011",
+    "theme_a": "freedom",
+    "theme_b": "illusion",
+    "type": "distortion",
+    "meaning": "The desire for freedom may be shaped by an idealized version of what lies ahead.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_012",
+    "theme_a": "risk",
+    "theme_b": "illusion",
+    "type": "distortion",
+    "meaning": "A tempting risk may look different once assumptions and projections are separated from reality.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_013",
+    "theme_a": "manifestation",
+    "theme_b": "illusion",
+    "type": "distortion",
+    "meaning": "What you are trying to create may be influenced by an image of reality that is incomplete.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_014",
+    "theme_a": "creation",
+    "theme_b": "illusion",
+    "type": "distortion",
+    "meaning": "Creative intention can become tangled with projection when perception is unclear.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_015",
+    "theme_a": "agency",
+    "theme_b": "uncertainty",
+    "type": "tension",
+    "meaning": "Having the power to act does not always mean knowing which direction is right.",
+    "curse_aware": false
+  }
+]

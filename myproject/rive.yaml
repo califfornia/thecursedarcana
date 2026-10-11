@@ -1,0 +1,11 @@
+name: myproject
+scripting: wasm
+logs:
+  file: build/rive.log
+  problems: build/problems.log
+exclude:
+  - "*.luau"
+push:
+  projectId: 2006450
+  fileId: 2638388
+main: "Escene"

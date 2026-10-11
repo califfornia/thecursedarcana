@@ -1,0 +1,13 @@
+{
+  "name": "anima-cursed-arcana",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "@rive-app/canvas": "2.44.2"
+  }
+}

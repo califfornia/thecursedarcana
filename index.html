@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#18091b">
+  <title>The Cursed Arcana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scene-background" aria-hidden="true">
+    <canvas id="reading-canvas"></canvas>
+  </div>
+  <main class="app-shell">
+    <div class="audio-controls" role="group" aria-label="Background music controls">
+      <button id="music-toggle" class="audio-toggle" type="button" aria-label="Mute background music" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M11 5 6 9H3v6h3l5 4V5Z"/>
+          <path id="music-on-icon" d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/>
+          <path id="music-off-icon" d="m16 9 5 6m0-6-5 6" hidden/>
+        </svg>
+      </button>
+      <label class="visually-hidden" for="music-volume">Background music volume</label>
+      <input id="music-volume" type="range" min="0" max="100" value="35" aria-label="Background music volume">
+      <output id="music-volume-value" for="music-volume">35%</output>
+      <span id="music-status" class="visually-hidden" aria-live="polite"></span>
+    </div>
+    <p id="scene-prompt" class="scene-prompt" hidden>Click the table to draw three cards.</p>
+    <details id="status" class="engine-status" aria-label="Engine status">
+      <summary>Engine status</summary>
+      <p>Server: <span data-status="server">… Connecting</span></p>
+      <p>Data: <span data-status="data">… Not loaded</span></p>
+      <p>Engine: <span data-status="engine">… Not initialized</span></p>
+      <p>Rive: <span data-status="rive">… Not initialized</span></p>
+      <p>Context: <span data-status="context">UNKNOWN</span></p>
+      <p>Cards: <span data-status="cards">0</span></p>
+      <p>Cursed: <span data-status="cursed">0</span></p>
+      <p>Curse Level: <span data-status="level">0</span></p>
+      <p data-status="error" role="alert"></p>
+    </details>
+  </main>
+
+  <dialog id="intro-modal" class="arcana-modal" aria-labelledby="intro-title" aria-describedby="intro-description">
+    <div class="modal-content intro-content">
+      <h2 id="intro-title" tabindex="-1" autofocus>THE CURSED ARCANA</h2>
+      <p id="intro-description" class="modal-copy">
+        Every card has a story. Some carry a curse.
+      </p>
+      <p class="intro-welcome">
+        Welcome to The Cursed Arcana, a dark tarot experience where the cards reveal a thread through
+        your past, present, and future. Choose what is on your mind, draw three cards, and let the Arcana
+        unfold your reading. But beware.
+      </p>
+      <p class="intro-welcome">
+        Some cards are <strong>cursed</strong>. A curse does not predict your fate; it reveals where the
+        energy of a card may become distorted, blocked, or difficult to understand.
+      </p>
+      <h3 class="how-it-works-title">HOW IT WORKS</h3>
+      <ol class="how-it-works">
+        <li>
+          <h3>01 — CHOOSE YOUR FOCUS</h3>
+          <p>Love, Career, Self, Choice, or the Unknown.</p>
+        </li>
+        <li>
+          <h3>02 — FOLLOW THE THREAD</h3>
+          <p>The cards interact with one another, revealing themes, connections, and possible tensions within your reading.</p>
+        </li>
+        <li>
+          <h3>03 — FACE THE CURSE</h3>
+          <p>If a cursed card appears, discover what may be influencing the thread beneath the surface.</p>
+        </li>
+      </ol>
+      <p class="modal-whisper">YOUR FATE IS NOT WRITTEN HERE.</p>
+      <button id="begin-reading" class="primary-button" type="button">
+        <span>Begin your reading</span><span aria-hidden="true">→</span>
+      </button>
+    </div>
+  </dialog>
+
+  <dialog id="theme-modal" class="arcana-modal" aria-labelledby="theme-title" aria-describedby="theme-description">
+    <div class="modal-content theme-content">
+      <button id="back-to-intro" class="text-button modal-back" type="button" aria-label="Back to introduction">
+        <span aria-hidden="true">←</span> Back
+      </button>
+      <h2 id="theme-title">WHAT IS ON YOUR MIND</h2>
+      <p id="theme-description" class="modal-copy">Select a theme for the reading</p>
+      <div id="contexts" class="theme-options" role="group" aria-label="Reading theme">
+        <button type="button" data-context="love" aria-pressed="false">
+          <span>Love</span>
+        </button>
+        <button type="button" data-context="career" aria-pressed="false">
+          <span>Career</span>
+        </button>
+        <button type="button" data-context="self" aria-pressed="false">
+          <span>Self</span>
+        </button>
+        <button type="button" data-context="choice" aria-pressed="false">
+          <span>Choice</span>
+        </button>
+        <button type="button" data-context="unknown" class="selected" aria-pressed="true">
+          <span>Unknown</span>
+        </button>
+      </div>
+      <p id="theme-error" class="modal-error" role="alert"></p>
+      <button id="start-reading" class="primary-button" type="button" disabled>
+        <span>Start your reading</span><span aria-hidden="true">→</span>
+      </button>
+    </div>
+  </dialog>
+
+  <dialog id="reading-modal" class="arcana-modal reading-modal" aria-labelledby="reading-title">
+    <div class="modal-content reading-content">
+      <header class="reading-header">
+        <div>
+          <p class="eyebrow">YOUR READING IS REVEALED</p>
+          <h2 id="reading-title">The cards have spoken.</h2>
+        </div>
+        <div class="reading-actions">
+          <button id="new-reading" class="secondary-button" type="button">New reading</button>
+          <button id="close-reading" class="close-button" type="button" aria-label="Close reading">×</button>
+        </div>
+      </header>
+      <section id="narrative" class="reading-narrative" aria-live="polite">
+        <p>Your reading will appear here.</p>
+      </section>
+      <p id="error" class="modal-error" role="alert"></p>
+    </div>
+  </dialog>
+
+  <script src="/web/vendor/rive.js"></script>
+  <script type="module" src="web/main.js"></script>
+</body>
+</html>

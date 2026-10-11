@@ -1,0 +1,466 @@
+[
+  {
+    "id": "rel_001",
+    "theme_a": "new_beginning",
+    "theme_b": "uncertainty",
+    "type": "tension",
+    "meaning": "A new beginning may feel meaningful while still lacking clarity.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_002",
+    "theme_a": "agency",
+    "theme_b": "illusion",
+    "type": "distortion",
+    "meaning": "The ability to act may be distorted when perception is shaped by assumptions or projection.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_003",
+    "theme_a": "intuition",
+    "theme_b": "illusion",
+    "type": "confusion",
+    "meaning": "It may be difficult to distinguish intuition from projection, fear, or wishful thinking.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_004",
+    "theme_a": "freedom",
+    "theme_b": "uncertainty",
+    "type": "tension",
+    "meaning": "Freedom can open new possibilities while leaving the direction uncertain.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_005",
+    "theme_a": "new_beginning",
+    "theme_b": "freedom",
+    "type": "harmony",
+    "meaning": "A new beginning creates room for exploration, freedom, and a different way forward.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_006",
+    "theme_a": "creation",
+    "theme_b": "agency",
+    "type": "harmony",
+    "meaning": "The ability to create is strengthened when intention and agency move in the same direction.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_007",
+    "theme_a": "manifestation",
+    "theme_b": "agency",
+    "type": "harmony",
+    "meaning": "Intent becomes more tangible when it is supported by deliberate action.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_008",
+    "theme_a": "creation",
+    "theme_b": "new_beginning",
+    "type": "progression",
+    "meaning": "What was created in the past can become the foundation for a new beginning.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_009",
+    "theme_a": "risk",
+    "theme_b": "uncertainty",
+    "type": "tension",
+    "meaning": "Taking a risk becomes more difficult when the outcome cannot yet be seen clearly.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_010",
+    "theme_a": "risk",
+    "theme_b": "freedom",
+    "type": "harmony",
+    "meaning": "Accepting uncertainty can create the freedom to move beyond familiar limits.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_011",
+    "theme_a": "freedom",
+    "theme_b": "illusion",
+    "type": "distortion",
+    "meaning": "The desire for freedom may be shaped by an idealized version of what lies ahead.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_012",
+    "theme_a": "risk",
+    "theme_b": "illusion",
+    "type": "distortion",
+    "meaning": "A tempting risk may look different once assumptions and projections are separated from reality.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_013",
+    "theme_a": "manifestation",
+    "theme_b": "illusion",
+    "type": "distortion",
+    "meaning": "What you are trying to create may be influenced by an image of reality that is incomplete.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_014",
+    "theme_a": "creation",
+    "theme_b": "illusion",
+    "type": "distortion",
+    "meaning": "Creative intention can become tangled with projection when perception is unclear.",
+    "curse_aware": true
+  },
+  {
+    "id": "rel_015",
+    "theme_a": "agency",
+    "theme_b": "uncertainty",
+    "type": "tension",
+    "meaning": "Having the power to act does not always mean knowing which direction is right.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_016",
+    "theme_a": "abundance",
+    "theme_b": "nurturing",
+    "type": "reinforcement",
+    "meaning": "Care and attention help what is already growing become more abundant.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_017",
+    "theme_a": "accountability",
+    "theme_b": "clarity",
+    "type": "progression",
+    "meaning": "Honest accountability can bring the situation into sharper focus.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_018",
+    "theme_a": "alignment",
+    "theme_b": "choice",
+    "type": "harmony",
+    "meaning": "A choice becomes clearer when it reflects what matters most to you.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_019",
+    "theme_a": "ambition",
+    "theme_b": "determination",
+    "type": "reinforcement",
+    "meaning": "Steady determination gives ambition a direction it can sustain.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_020",
+    "theme_a": "attachment",
+    "theme_b": "release",
+    "type": "tension",
+    "meaning": "The wish to hold on meets the possibility that something has reached its ending.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_021",
+    "theme_a": "authority",
+    "theme_b": "structure",
+    "type": "reinforcement",
+    "meaning": "Clear structure gives authority a stable and accountable form.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_022",
+    "theme_a": "awakening",
+    "theme_b": "transformation",
+    "type": "progression",
+    "meaning": "A new awareness is opening the way for lasting change.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_023",
+    "theme_a": "balance",
+    "theme_b": "healing",
+    "type": "harmony",
+    "meaning": "Restoring balance can make room for gradual healing.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_024",
+    "theme_a": "belief",
+    "theme_b": "tradition",
+    "type": "reinforcement",
+    "meaning": "Inherited traditions continue to shape the beliefs guiding the present.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_025",
+    "theme_a": "change",
+    "theme_b": "cycles",
+    "type": "progression",
+    "meaning": "This change is part of a larger cycle that is turning toward a new phase.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_026",
+    "theme_a": "clarity",
+    "theme_b": "illusion",
+    "type": "contrast",
+    "meaning": "A clearer view may emerge when appearances are questioned rather than accepted.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_027",
+    "theme_a": "collapse",
+    "theme_b": "disruption",
+    "type": "reinforcement",
+    "meaning": "A disruption is exposing the parts of a structure that can no longer hold.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_028",
+    "theme_a": "compassion",
+    "theme_b": "courage",
+    "type": "harmony",
+    "meaning": "Compassion makes courage gentler without making it less truthful.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_029",
+    "theme_a": "completion",
+    "theme_b": "integration",
+    "type": "reinforcement",
+    "meaning": "A cycle reaches completion as its lessons become part of a wider understanding.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_030",
+    "theme_a": "connection",
+    "theme_b": "choice",
+    "type": "tension",
+    "meaning": "The desire for connection sits beside a choice about what kind of bond is truly aligned.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_031",
+    "theme_a": "courage",
+    "theme_b": "self_control",
+    "type": "reinforcement",
+    "meaning": "Courage is strengthened by the patience to respond rather than react.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_032",
+    "theme_a": "cycles",
+    "theme_b": "fate",
+    "type": "contrast",
+    "meaning": "Some circumstances turn beyond your control, while your response remains your own.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_033",
+    "theme_a": "desire",
+    "theme_b": "temptation",
+    "type": "reinforcement",
+    "meaning": "A powerful desire is drawing attention to what feels compelling and what may carry a cost.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_034",
+    "theme_a": "determination",
+    "theme_b": "movement",
+    "type": "progression",
+    "meaning": "Consistent effort is turning intention into forward movement.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_035",
+    "theme_a": "disruption",
+    "theme_b": "revelation",
+    "type": "progression",
+    "meaning": "A sudden disruption may reveal what was already unstable beneath the surface.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_036",
+    "theme_a": "ending",
+    "theme_b": "transformation",
+    "type": "progression",
+    "meaning": "An ending is making space for a different form of life to take shape.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_037",
+    "theme_a": "change",
+    "theme_b": "fate",
+    "type": "contrast",
+    "meaning": "Circumstances may shift beyond your choosing, but your next response is still yours.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_038",
+    "theme_a": "completion",
+    "theme_b": "fulfillment",
+    "type": "harmony",
+    "meaning": "A completed effort brings a deeper sense of fulfillment and wholeness.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_039",
+    "theme_a": "guidance",
+    "theme_b": "wisdom",
+    "type": "reinforcement",
+    "meaning": "The wisdom you have gathered can help you recognize guidance already available to you.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_040",
+    "theme_a": "healing",
+    "theme_b": "hope",
+    "type": "reinforcement",
+    "meaning": "Small acts of healing are allowing hope to return at its own pace.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_041",
+    "theme_a": "hidden_knowledge",
+    "theme_b": "intuition",
+    "type": "harmony",
+    "meaning": "Quiet observation and intuition may reveal what has not yet been spoken.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_042",
+    "theme_a": "hope",
+    "theme_b": "renewal",
+    "type": "progression",
+    "meaning": "Hope is gathering into the possibility of renewal.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_043",
+    "theme_a": "integration",
+    "theme_b": "transformation",
+    "type": "progression",
+    "meaning": "Change becomes lasting when its different parts are brought into the whole.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_044",
+    "theme_a": "joy",
+    "theme_b": "vitality",
+    "type": "reinforcement",
+    "meaning": "Joy is restoring energy and bringing more life into the present.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_045",
+    "theme_a": "manifestation",
+    "theme_b": "creation",
+    "type": "progression",
+    "meaning": "An idea is moving from possibility toward a form that can be acted upon.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_046",
+    "theme_a": "movement",
+    "theme_b": "ambition",
+    "type": "reinforcement",
+    "meaning": "A clear ambition is giving movement a sense of direction.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_047",
+    "theme_a": "mystery",
+    "theme_b": "hidden_knowledge",
+    "type": "harmony",
+    "meaning": "What remains mysterious may still offer clues to those willing to observe patiently.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_048",
+    "theme_a": "patience",
+    "theme_b": "balance",
+    "type": "harmony",
+    "meaning": "Patience is helping opposing needs find a more sustainable balance.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_049",
+    "theme_a": "perspective",
+    "theme_b": "reflection",
+    "type": "progression",
+    "meaning": "Reflection is allowing a different perspective to come into view.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_050",
+    "theme_a": "reflection",
+    "theme_b": "wisdom",
+    "type": "progression",
+    "meaning": "Looking back with care can turn experience into usable wisdom.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_051",
+    "theme_a": "release",
+    "theme_b": "ending",
+    "type": "harmony",
+    "meaning": "Accepting an ending can make release gentler and more complete.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_052",
+    "theme_a": "risk",
+    "theme_b": "determination",
+    "type": "tension",
+    "meaning": "Determination can carry you through risk, provided urgency does not replace judgment.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_053",
+    "theme_a": "sacrifice",
+    "theme_b": "compassion",
+    "type": "contrast",
+    "meaning": "Care for others matters, but it need not require abandoning care for yourself.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_054",
+    "theme_a": "solitude",
+    "theme_b": "reflection",
+    "type": "harmony",
+    "meaning": "Time alone can create the quiet needed for honest reflection.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_055",
+    "theme_a": "stability",
+    "theme_b": "change",
+    "type": "tension",
+    "meaning": "The need for stability is being tested by circumstances that are changing.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_056",
+    "theme_a": "structure",
+    "theme_b": "belief",
+    "type": "reinforcement",
+    "meaning": "A familiar structure is holding beliefs in place, inviting you to decide what still serves.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_057",
+    "theme_a": "tradition",
+    "theme_b": "guidance",
+    "type": "harmony",
+    "meaning": "A trusted teaching may offer guidance while you decide which traditions to carry forward.",
+    "curse_aware": false
+  },
+  {
+    "id": "rel_058",
+    "theme_a": "uncertainty",
+    "theme_b": "mystery",
+    "type": "confusion",
+    "meaning": "The unknown is difficult to read; patience may be more useful than forcing an answer.",
+    "curse_aware": false
+  }
+]
